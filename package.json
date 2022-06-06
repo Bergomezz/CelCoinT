@@ -1,0 +1,30 @@
+{
+  "name": "cartfunctionalityteste",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cy:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bergomezz/CartFunctionalityTeste.git"
+  },
+  "keywords": [
+    "Cypress",
+    "Test"
+  ],
+  "author": "Bernardo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bergomezz/CartFunctionalityTeste/issues"
+  },
+  "homepage": "https://github.com/Bergomezz/CartFunctionalityTeste#readme",
+  "dependencies": {
+    "cypress": "^10.0.2"
+  },
+  "devDependencies": {
+    "prettier": "2.6.2"
+  }
+}
