@@ -1,5 +1,5 @@
-Cypress.Commands.add('fillForm', () => {
-	cy.fixture("registerForm").then(user => {
+Cypress.Commands.add('preenchendoFormulario', () => {
+	cy.fixture('registerForm').then(user => {
 		cy.get('#id_gender1').check()
 		cy.get('#customer_firstname').type(user.firstName)
 		cy.get('#customer_lastname').type(user.lastName)
@@ -20,9 +20,9 @@ Cypress.Commands.add('fillForm', () => {
 })
 
 Cypress.Commands.add('logIntoApp', () => {
-	cy.fixture("login").then(user => {
+	cy.fixture('login').then(user => {
 		cy.get('#email').type(user.USER_ID)
-		cy.get('#passwd').type(user.USER_PASSWORD, {log: false})
+		cy.get('#passwd').type(user.USER_PASSWORD, { log: false })
 	})
 	cy.get('#SubmitLogin > span').click()
 })
